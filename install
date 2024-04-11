@@ -1,0 +1,103 @@
+#!/bin/bash
+
+
+## Install OBDII Monitoring tools on Linux (Debian).
+
+
+RC='\e[0m'
+OK='\e[32m'
+WARN='\e[31m'
+INFO='\e[33m'
+
+checkRoot() {
+
+	if [[ ${EUID} -ne '0' ]]; then
+
+		echo -e "${WARN}Run me as root!${RC}"
+		exit 1
+
+	fi
+}
+
+installAptPkgs() {
+
+	apt update
+
+	PKGS=(scantool git python3 python3-pip libglib2.0-dev libsmbclient-dev libcups2-dev libgirepository1.0-dev libcurl4-openssl-dev libssl-dev)
+
+	for PKG in "${PKGS[@]}"; do
+
+		apt install -fyq "${PKG}"
+
+	done
+
+}
+
+installPyPkgs() {
+
+	PY_PKGS=(pyserial obd)
+
+	for PY_PKG in "${PY_PKGS[@]}"; do
+
+		pip3 install "${PY_PKG}"
+
+	done
+
+}
+
+
+installPyOBD() {
+
+	REPO_URL='https://github.com/barracuda-fsh/pyobd.git'
+	PYOBD_DIR='/opt/pyobd'
+
+		if [[ -e "${PYOBD_DIR}" ]]; then
+
+			echo -e "${OK}${PYOBD_DIR} already present!${RC}"
+			return
+
+		fi
+
+	cd /opt && git clone "${REPO_URL}"
+
+	pip3 install -r requirements.txt
+
+}
+
+startApplication() {
+
+	startPyOBD() {
+
+		PYOBD_PATH='/opt/pyobd'
+
+			if [[ ! -e "${PYOBD_PATH}" ]]; then
+
+				echo -e "${PYOBD_PATH} not found!"
+				return
+
+			fi
+
+		cd "${PYOBD_PATH}" && coproc python3 pyobd.py
+	}
+
+	startPyOBD
+	coproc scantool
+
+}
+
+checkRoot
+
+OK_MSG="\n${OK}Installation Completed Successfully!${RC}\n\n"
+FAIL_MSG="\n${WARN}Something went wrong! (probably related to numpy)${RC}\n\n"
+
+echo -e "\n${INFO}Installing needed APT packages...${RC}\n"
+installAptPkgs && echo -e "${OK_MSG}" || { echo -e "${FAIL_MSG}"; exit 1; }
+
+echo -e "\n${INFO}Installing needed Python packages...${RC}\n"
+installPyPkgs && echo -e "${OK_MSG}" || { echo -e "${FAIL_MSG}"; exit 1; }
+
+echo -e "\n${INFO}Installing PyOBD from github...${RC}\n"
+installPyOBD && echo -e "${OK_MSG}" || { echo -e "${FAIL_MSG}"; exit 1; }
+
+echo -e "\n${INFO}Starting OBDII monitoring program...${RC}\n"
+startApplication
