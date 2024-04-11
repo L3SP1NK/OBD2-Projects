@@ -9,6 +9,23 @@ OK='\e[32m'
 WARN='\e[31m'
 INFO='\e[33m'
 
+
+showBanner() {
+
+
+echo -e '
+  ooooooo  oooooooooo ooooooooo     ooooooo
+o888   888o 888    888 888    88o o88     888
+888     888 888oooo88  888    888       o88
+888o   o888 888    888 888    888    o888   o
+  88ooo88  o888ooo888 o888ooo88   o8888oooo88
+'
+
+
+}
+
+
+
 checkRoot() {
 
 	if [[ ${EUID} -ne '0' ]]; then
@@ -86,6 +103,7 @@ startApplication() {
 }
 
 checkRoot
+showBanner
 
 OK_MSG="\n${OK}Installation Completed Successfully!${RC}\n\n"
 FAIL_MSG="\n${WARN}Something went wrong! (probably related to numpy)${RC}\n\n"
