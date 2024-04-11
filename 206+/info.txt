@@ -5,23 +5,7 @@
 - Live data from your PSA vehicle (Peugeot, Citroën) on your smartphone or tablet, directly from the VAN bus [https://github.com/0xCAFEDECAF/VanLiveConnect]
 
 ...
-more ideas
 https://githubhelp.com/topic/psa
 https://githubhelp.com/topic/peugeot
 https://github.com/topics/peugeot?l=c%2B%2B
 ...
-
-Ne couvrez pas le capteur de luminosité, couplé au capteur de pluie, situé
-au centre du pare-brise, derrière le rétroviseur intérieur.
-
-Par temps de brouillard ou de neige, le capteur de luminosité peut détecter la
-luminosité automatiquement.
-
-Si nécessaire, le les feux de croisement doivent être éteints allumé manuellement.
-Cette fonction est active lorsque le véhicule est fourni au client.
-
-Pour désarmer ou activer la fonction :
-
-1. Placez la clé dans le compartiment accessoires, position (1er cran).
-2. Placer la commande des feux en position 0.
-3. Appuyez sur l'extrémité de la commande d'éclairage pendant plus de quatre secondes.
