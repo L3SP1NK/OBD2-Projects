@@ -78,7 +78,7 @@ installPyOBD() {
 
 	cd /opt && git clone "${REPO_URL}"
 
-	pip3 install -r requirements.txt
+	cd "${PYOBD_DIR}" && pip3 install -r requirements.txt
 
 }
 
