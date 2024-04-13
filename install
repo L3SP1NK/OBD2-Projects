@@ -41,7 +41,7 @@ installAptPkgs() {
 
 	apt update
 
-	PKGS=(scantool git python3 python3-pip libglib2.0-dev libsmbclient-dev libcups2-dev libgirepository1.0-dev libcurl4-openssl-dev libssl-dev)
+	PKGS=(scantool git python3 python3-pip libglib2.0-dev libsmbclient-dev libcups2-dev libgirepository1.0-dev libcurl4-openssl-dev libssl-dev python3-wxmplot)
 
 	for PKG in "${PKGS[@]}"; do
 
