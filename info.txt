@@ -1,3 +1,5 @@
+## Car ECU emulation on x86 linux?
+## USB2CAN?
 
 ## tty ACMEX / USBX
 /dev/ttyACME0	→	driver embeded inside the controller	( serial-to-USB is performed inside the controller. )
