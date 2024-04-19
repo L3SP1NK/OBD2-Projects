@@ -1,0 +1,32 @@
+#!/bin/python3
+
+import obd
+import time
+
+# Function to connect to the OBD-II adapter
+def connect_obd():
+    connection = obd.OBD()  # auto-connects to USB or RF port
+    if connection.is_connected():
+        print("Successfully connected to the vehicle.")
+    else:
+        print("Failed to connect to the vehicle. Check if the device is connected properly.")
+        exit()
+    return connection
+
+# Function to fetch and display all supported sensor data
+def fetch_and_display_data(connection):
+    while True:
+        for command in connection.supported_commands:
+            response = connection.query(command)  # send the command, and parse the response
+            if not response.is_null():  # check if there is a valid response
+                print(f"{command.name}: {response.value}")
+            else:
+                print(f"{command.name}: No data")
+        time.sleep(1)  # wait for 1 second before the next update
+
+def main():
+    connection = connect_obd()
+    fetch_and_display_data(connection)
+
+if __name__ == "__main__":
+    main()
