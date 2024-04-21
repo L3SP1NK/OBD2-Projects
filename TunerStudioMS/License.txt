@@ -1,0 +1,25 @@
+This software is the confidential and proprietary information of EFI Analytics. 
+You shall use it only in accordance with the terms of the license agreement you 
+entered into with EFI Analytics.
+
+This software is a designed to be a tool to aid in engine tuning. The writers 
+and creators are in no way responsible for damages incurred during the use of 
+this software. As a user of this software you fully understand intended usage 
+or risks associated with configuring an EFI controller. You accept full 
+responsibility for any and all damages that may occur while using this tool.
+
+This tool is not intended to be used by any person during while operating a 
+motor vehicle. 
+
+EFI Analytics grants the right to distribute this software as distributed by 
+EFI Analytics. Distribution with commercial products or for profit or benefit
+ to any commercial entity must be covered by and agreement with EFI Analytics
+ or Philip S Tobin. 
+
+Copyright (c) 2005-2010, EFI Analytics. All Rights Reserved.
+
+ For questions or additional information contact:
+ Phil Tobin
+ EFI Analytics
+ philip.tobin@yahoo.com
+
