@@ -1,0 +1,6 @@
+#!/bin/bash
+set -euxo pipefail
+coproc python3 -m elm -a 115200
+coproc python3 KatyOBD.py
+
+

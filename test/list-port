@@ -1,6 +1,0 @@
-#!/bin/python3
-
-import obd
-
-ports = obd.scan_serial()
-print(ports)

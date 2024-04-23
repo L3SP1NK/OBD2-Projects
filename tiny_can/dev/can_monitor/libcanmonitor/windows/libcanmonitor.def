@@ -1,0 +1,203 @@
+EXPORTS
+    AboutPageNew @1
+    CBufferCreate @2
+    CBufferDataAdd @3
+    CBufferDataClear @4
+    CBufferDestroy @5
+    CBufferEventConnect @6
+    CBufferEventDisconnect @7
+    CBufferGetInfoString @8
+    CBufferGetSize @9
+    CBufferGetUsedSize @10
+    CBufferLoadFile @11
+    CBufferSaveFile @12
+    CBufferSetInfoString @13
+    CBufferSetSize @14
+    CViewAttachBuffer @15
+    CViewClearAll @16
+    CViewConfigureCB @17
+    CViewDataHandlerCreate @18
+    CViewDataHandlerDestroy @19
+    CViewDraw @20
+    CViewExposeCB @21
+    CViewGetMaxCharWidth @22
+    CViewGetUsedSize @23
+    CViewNew @24
+    CViewQueueDraw @25
+    CViewResizeColumns @26
+    CViewSetColumnsColor @27
+    CViewSetScrollTo @28
+    CViewSetShow @29
+    CViewSetUsedSize @30
+    CViewSetViewFont @31
+    CViewValueChangedCB @32
+    CanTxSetDataEntrys @33
+    CanTxSetDisplayMessage @34
+    CanTxSetEditMode @35
+    CanTxSetEditModeEx @36
+    CanTxSetReturnAutoSend @37
+    CanTxSetShowing @38
+    CanTxWidgetDestroy @39
+    CanTxWidgetGetMsg @40
+    CanTxWidgetNew @41
+    CanTxWidgetSetMsg @42
+    CreateFileName @43
+    DIR_RX_STR @44 DATA
+    DIR_TX_STR @45 DATA
+    DateiInfoBuffer @46 DATA
+    DateiInfoDlg @47 DATA
+    DateiInfoText @48 DATA
+    ENTRY_INVALID_COLOR @49 DATA
+    ENTRY_UNUSED_COLOR @50 DATA
+    ENTRY_VALID_COLOR @51 DATA
+    EditBinWidth @52 DATA
+    EditBtnClickedCB @53
+    EditHexWidth @54 DATA
+    EffCheckToggledCB @55
+    FORMAT_EFF_RTR_STR @56 DATA
+    FORMAT_EFF_STR @57 DATA
+    FORMAT_INVALID @58 DATA
+    FORMAT_STD_RTR_STR @59 DATA
+    FORMAT_STD_STR @60 DATA
+    GetDefaultFont @61
+    GetInfoText @62
+    GetItemAsString @63
+    GetItemAsULong @64
+    HexEntryActivateCB @65
+    HexEntryButtonPressCB @66
+    HexEntryCreateCursor @67
+    HexEntryDestroy @68
+    HexEntryDetectMode @69
+    HexEntryEditChangedCB @70
+    HexEntryEventCB @71
+    HexEntryEventCB0 @72
+    HexEntryEventCB1 @73
+    HexEntryEventCB2 @74
+    HexEntryEventCB3 @75
+    HexEntryEventCB4 @76
+    HexEntryEventCB5 @77
+    HexEntryEventCB6 @78
+    HexEntryEventCB7 @79
+    HexEntryEventCB8 @80
+    HexEntryFocusOutCB @81
+    HexEntryGetValue @82
+    HexEntryNew @83
+    HexEntryPrintValue @84
+    HexEntryReadValueEx @85
+    HexEntryRepaintMode @86
+    HexEntrySetColor @87
+    HexEntrySetEditMode @88
+    HexEntrySetEntryWidth @89
+    HexEntrySetValue @90
+    HexEntrySetValueWidth @91
+    HexSpinBtnChangeValueCB @92
+    RtrCheckToggledCB @93
+    SelectFileDlg @94
+    SendBtnClickedCB @95
+    SetInfoText @96
+    SetSensitive @97
+    SetSensitiveList @98
+    ShowAboutDlg @99
+    ShowDateiInfo @100
+    ShowDrvInfoWin @101
+    SplashStart @102
+    SplashStop @103
+    SplashUpdate @104
+    SplitFileName @105
+    TextLoadFromFile @106
+    TextPageNewFromFile @107
+    UpdateGTK @108
+    ValueBinEntryWidth @109 DATA
+    ValueEntryWidth @110 DATA
+    WidgetSetColor @111
+    _nm__g_thread_functions_for_glib_use @112 DATA
+    _nm__g_threads_got_initialized @113 DATA
+    cfg_free @114
+    cfg_new @115
+    cfg_open_file @116
+    cfg_read_boolean @117
+    cfg_read_color @118
+    cfg_read_double @119
+    cfg_read_float @120
+    cfg_read_int @121
+    cfg_read_string @122
+    cfg_remove_key @123
+    cfg_write_boolean @124
+    cfg_write_byte @125
+    cfg_write_color @126
+    cfg_write_double @127
+    cfg_write_file @128
+    cfg_write_float @129
+    cfg_write_int @130
+    cfg_write_string @131
+    cfg_write_word @132
+    diff_time @133
+    diff_timestamp @134
+    mhs_event_add @135
+    mhs_event_add_full @136
+    mhs_event_enable @137
+    mhs_event_funcs @138 DATA
+    mhs_event_source_new @139
+    mhs_obj_context_default @140
+    mhs_obj_context_new @141
+    mhs_object_destroy @142
+    mhs_object_event_connect @143
+    mhs_object_get_event_count @144
+    mhs_object_init @145
+    mhs_object_new @146
+    mhs_object_remove @147
+    mhs_object_reset_event @148
+    mhs_object_set_event @149
+    mhs_object_set_event_unlocked @150
+    mhs_object_valid @151
+    mhs_object_valid_unlocked @152
+    mhs_reset_event @153
+    mhs_set_event @154
+    mhs_signal_block @155
+    mhs_signal_clear @156
+    mhs_signal_clear_all @157
+    mhs_signal_connect @158
+    mhs_signal_create @159
+    mhs_signal_create_handler @160
+    mhs_signal_destroy @161
+    mhs_signal_destroy_handler @162
+    mhs_signal_disconnect @163
+    mhs_signal_disconnect_owner @164
+    mhs_signal_emit @165
+    mhs_signal_init @166
+    mhs_signal_unblock @167
+    mhs_strcmp0 @168
+    moo_font_button_get_filter_visible @169
+    moo_font_button_get_font_name @170
+    moo_font_button_get_monospace @171
+    moo_font_button_get_show_size @172
+    moo_font_button_get_show_style @173
+    moo_font_button_get_title @174
+    moo_font_button_get_type @175
+    moo_font_button_get_use_font @176
+    moo_font_button_get_use_size @177
+    moo_font_button_new @178
+    moo_font_button_new_with_font @179
+    moo_font_button_set_filter_visible @180
+    moo_font_button_set_font_name @181
+    moo_font_button_set_monospace @182
+    moo_font_button_set_show_size @183
+    moo_font_button_set_show_style @184
+    moo_font_button_set_title @185
+    moo_font_button_set_use_font @186
+    moo_font_button_set_use_size @187
+    moo_font_selection_dialog_get_font_name @188
+    moo_font_selection_dialog_get_preview_text @189
+    moo_font_selection_dialog_get_type @190
+    moo_font_selection_dialog_new @191
+    moo_font_selection_dialog_set_font_name @192
+    moo_font_selection_dialog_set_preview_text @193
+    moo_font_selection_get_font_name @194
+    moo_font_selection_get_preview_text @195
+    moo_font_selection_get_type @196
+    moo_font_selection_new @197
+    moo_font_selection_set_filter_visible @198
+    moo_font_selection_set_font_name @199
+    moo_font_selection_set_monospace @200
+    moo_font_selection_set_preview_text @201
+    msg_box @202

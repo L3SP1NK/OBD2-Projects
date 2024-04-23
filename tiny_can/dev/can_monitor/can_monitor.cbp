@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="can_monitor" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="windows/can_monitor" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add option="-DENABLE_NLS" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="windows/can_monitor" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add option="-DENABLE_NLS" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-mms-bitfields" />
+			<Add directory="$(#gtk.include)" />
+			<Add directory="$(#gtk.include)/gtk-2.0" />
+			<Add directory="$(#gtk.include)/cairo" />
+			<Add directory="$(#gtk.include)/gdk" />
+			<Add directory="$(#gtk.include)/glib-2.0" />
+			<Add directory="$(#gtk.lib)/glib-2.0/include" />
+			<Add directory="$(#gtk.include)/gdk-pixbuf-2.0" />
+			<Add directory="$(#gtk.include)/pango-1.0" />
+			<Add directory="$(#gtk.lib)/gtk-2.0/include" />
+			<Add directory="$(#gtk.include)/atk-1.0" />
+			<Add directory="$(#can_api.include)" />
+			<Add directory="$(#libcanmonitor.include)" />
+		</Compiler>
+		<Linker>
+			<Add library="gtk-win32-2.0" />
+			<Add library="gobject-2.0" />
+			<Add library="glib-2.0" />
+			<Add library="gdk-win32-2.0" />
+			<Add library="atk-1.0" />
+			<Add library="gdk_pixbuf-2.0" />
+			<Add library="pangowin32-1.0" />
+			<Add library="pango-1.0" />
+			<Add library="gmodule-2.0" />
+			<Add library="intl" />
+			<Add library="gthread-2.0" />
+			<Add library="canmonitor" />
+			<Add directory="$(#gtk.lib)" />
+			<Add directory="$(#libcanmonitor.lib)" />
+		</Linker>
+		<Unit filename="../lib/can_drv_win.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="resource/resource.rc">
+			<Option compilerVar="WINDRES" />
+		</Unit>
+		<Unit filename="src/api_find.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/can_monitor_obj.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/can_monitor_obj.h" />
+		<Unit filename="src/can_speed_db.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/can_speed_win.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/cmdline.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/const.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/drv_scan.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/drv_win.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/filter.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/filter_win.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/main.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/main_can.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/makro.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/makro_win.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/paths.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/plugin.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/plugin_call.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/plugin_win.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/setup.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/start_win.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/win_reg.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Extensions>
+			<code_completion />
+			<debugger />
+			<envvars />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

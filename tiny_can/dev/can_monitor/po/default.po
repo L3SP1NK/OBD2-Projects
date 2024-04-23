@@ -1,0 +1,923 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Tiny CAN Monitor\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2009-08-26 23:30+0100\n"
+"PO-Revision-Date: \n"
+"Last-Translator: Klaus Demlehner <klaus@mhs-elektronik.de>\n"
+"Language-Team:  <klaus@mhs-elektronik.de>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-Basepath: x:\\tiny_can\\can_monitor\n"
+"X-Poedit-KeywordsList: _;N_\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: de\n"
+"X-Generator: Poedit 1.6.11\n"
+"X-Poedit-SearchPath-0: src\n"
+
+#: src/cmdline.c:53
+#, c-format
+msgid ""
+"\n"
+"Tiny CAN Monitor\n"
+"(c) by MHS-Elektronik 2008, Version 2.00\n"
+"     www.mhs-elektronik.de\n"
+"\n"
+"Options:\n"
+"  --setup -s : Select directory for configuration files\n"
+"  --help -h  :  Display this usage\n"
+msgstr ""
+"\n"
+"Tiny CAN Monitor\n"
+"(c) by MHS-Elektronik 2008, Version 2.00\n"
+"     www.mhs-elektronik.de\n"
+"\n"
+"Programm Parameter:\n"
+"  --setup -s : Verzeichnis in dem sich die Konfigurationsfiles befinden\n"
+"  --help -h  : Hilfstext anzeigen\n"
+
+#: src/cmdline.c:88
+#, c-format
+msgid "invalid option\n"
+msgstr "Ungültige Commandozeilen Option\n"
+
+#: src/filter.c:588 src/filter.c:853 src/filter_win.c:234 src/main.c:888
+#: src/main.c:892 src/main.c:908 src/main.c:914 src/main.c:1102
+#: src/main.c:1184 src/main.c:1204 src/main_can.c:237 src/main_can.c:256
+#: src/makro.c:353 src/makro.c:559 src/makro_win.c:468 src/makro_win.c:491
+#: src/plugin.c:229 src/setup.c:272 src/setup.c:278 src/setup.c:379
+#: src/drv_win.c:44
+msgid "Error"
+msgstr "Fehler"
+
+#: src/filter.c:588
+msgid "Error loading filter description file"
+msgstr "Filter Datei kann nicht geladen werden"
+
+#: src/filter.c:853
+msgid "Error saving filter description file"
+msgstr "Filter Datei kann nicht gespeichert werden"
+
+#: src/filter_win.c:121
+msgid "active"
+msgstr "Aktiv"
+
+#: src/filter_win.c:126
+msgid "show"
+msgstr "Show"
+
+#: src/filter_win.c:130
+msgid "filter-name"
+msgstr "Filter-Name"
+
+#: src/filter_win.c:234
+msgid "Error creating new filter"
+msgstr "Neues Filter kann nicht angelegt werden"
+
+#: src/filter_win.c:244 src/makro_win.c:500
+msgid "unnamed"
+msgstr "Unbenannt"
+
+#: src/filter_win.c:571 src/filter_win.c:586 src/filter_win.c:751
+msgid "Id:"
+msgstr "Id:"
+
+#: src/filter_win.c:572 src/filter_win.c:762
+msgid "-:"
+msgstr "-:"
+
+#: src/filter_win.c:578
+msgid "beginning:"
+msgstr "Start:"
+
+#: src/filter_win.c:579
+msgid "end:"
+msgstr "Ende:"
+
+#: src/filter_win.c:587
+msgid "maske:"
+msgstr "Maske:"
+
+#: src/filter_win.c:633
+msgid "Filter setup"
+msgstr "Filter einstellungen"
+
+#: src/filter_win.c:686 src/makro_win.c:906
+msgid "Delete"
+msgstr "Löschen"
+
+#: src/filter_win.c:691 src/main.c:1499
+msgid "New"
+msgstr "Neu"
+
+#: src/filter_win.c:704
+msgid "Name: "
+msgstr "Name:"
+
+#: src/filter_win.c:717
+msgid "Hardware filter"
+msgstr "Hardware Filter"
+
+#: src/filter_win.c:721
+msgid "Pass message"
+msgstr "Pass Message"
+
+#: src/filter_win.c:742
+msgid "Format:"
+msgstr "Format:"
+
+#: src/filter_win.c:747
+msgid "EFF"
+msgstr "EFF"
+
+#: src/filter_win.c:776
+msgid "single"
+msgstr "Single"
+
+#: src/filter_win.c:777
+msgid "range"
+msgstr "Bereich"
+
+#: src/filter_win.c:778
+msgid "masked"
+msgstr "Masked"
+
+#: src/filter_win.c:801 src/makro_win.c:1094
+msgid "_Close"
+msgstr "_Schließen"
+
+#: src/linux_port_setup.c:66
+msgid "Select interface port"
+msgstr "Port auswählen"
+
+#: src/linux_port_setup.c:79
+msgid "Device name : "
+msgstr "Device name : "
+
+#: src/linux_port_setup.c:108 src/setup.c:1297
+msgid "_Cancel"
+msgstr "_Abbrechen"
+
+#: src/linux_port_setup.c:129 src/setup.c:1318
+msgid "_Ok"
+msgstr "_Ok"
+
+#: src/main.c:174 src/main.c:294
+msgid "CAN: unknown"
+msgstr "CAN: Unbekannt"
+
+#: src/main.c:175 src/main.c:312
+msgid "STOP"
+msgstr "STOP"
+
+#: src/main.c:176 src/main.c:263 src/main.c:323
+msgid "?"
+msgstr "?"
+
+#: src/main.c:177 src/main.c:260
+msgid "Tiny-CAN connected"
+msgstr "Tiny-CAN verbunden"
+
+#: src/main.c:229
+msgid "Tiny-CAN API driver not loaded"
+msgstr "FEHLER: Kein Tiny-CAN API Treiber geladen"
+
+#: src/main.c:233
+msgid "Initialize Program"
+msgstr "Programm wird initialisiert"
+
+#: src/main.c:238 src/main.c:249
+msgid "Connect Tiny-CAN hardware to PC"
+msgstr "Verbindung zum Tiny-CAN noch nicht hergestellt"
+
+#: src/main.c:240 src/main.c:251
+msgid "Tiny-CAN not connected"
+msgstr "Tiny-CAN Online"
+
+#: src/main.c:244
+msgid "ERROR opening interface"
+msgstr "Port kann nicht geöffnet werden"
+
+#: src/main.c:256
+msgid "Connecting to Tiny-CAN ..."
+msgstr "Verbindung zum Tiny-CAN wird aufgebaut ..."
+
+#: src/main.c:274
+msgid "CAN: Ok"
+msgstr "CAN: Ok"
+
+#: src/main.c:278
+msgid "CAN: Error"
+msgstr "CAN: Error"
+
+#: src/main.c:282
+msgid "CAN: Error warning"
+msgstr "CAN: Error warning"
+
+#: src/main.c:286
+msgid "CAN: Error passiv"
+msgstr "CAN: Error passiv"
+
+#: src/main.c:290
+msgid "CAN: Bus off"
+msgstr "CAN: Bus off"
+
+#: src/main.c:297
+msgid "CAN: ?"
+msgstr "CAN: ?"
+
+#: src/main.c:308
+msgid "RUN"
+msgstr "RUN"
+
+#: src/main.c:316
+msgid "OV"
+msgstr "OV"
+
+#: src/main.c:320
+msgid "FULL"
+msgstr "FULL"
+
+#: src/main.c:644
+msgid "Question"
+msgstr "Frage"
+
+#: src/main.c:644
+msgid "Clear buffer ?"
+msgstr "Puffer löschen ?"
+
+#: src/main.c:660
+msgid "Stop"
+msgstr "Stop"
+
+#: src/main.c:672 src/main.c:1530
+msgid "Start"
+msgstr "Start"
+
+#: src/main.c:722
+msgid "invalid command line option, type -h for help"
+msgstr "Ungueltige Komandozeilen Parameter, geben Sie -h fuer Hilfe ein"
+
+#: src/main.c:724
+msgid "starting program"
+msgstr "Programm wird gestartet ..."
+
+#: src/main.c:809
+msgid "loading setup"
+msgstr "Setup laden ..."
+
+#: src/main.c:819
+msgid "loading plugins"
+msgstr "Plugins laden ..."
+
+#: src/main.c:883
+msgid "Loading CAN-Trace file"
+msgstr "CAN-Trace Datei laden"
+
+#: src/main.c:888
+msgid "Error loading file"
+msgstr "Fehler beim laden der Datei"
+
+#: src/main.c:892
+msgid "Error reading data from file"
+msgstr "Fehler beim lesen der Datei"
+
+#: src/main.c:908
+msgid "Buffer is empty, no data to writing into file"
+msgstr "Der Trace Puffer ist leer"
+
+#: src/main.c:911
+msgid "Saving CAN-Trace file"
+msgstr "CAN-Trace Datei speichern"
+
+#: src/main.c:914
+msgid "Error saving file"
+msgstr "Fehler beim speichern der Datei"
+
+#: src/main.c:927
+msgid "File information"
+msgstr "Datei Info"
+
+#: src/main.c:927
+msgid "<b>Text:</b>"
+msgstr "<b>Text:</b>"
+
+#: src/main.c:979
+msgid "Loading macro file"
+msgstr "Makro Datei laden"
+
+#: src/main.c:987
+msgid "Saving macro file"
+msgstr "Makro Datei Speichern"
+
+#: src/main.c:1015
+msgid "Loading filter file"
+msgstr "Filter Datei laden"
+
+#: src/main.c:1025
+msgid "Saving filter file"
+msgstr "Filter Datei speichern"
+
+#: src/main.c:1102
+msgid "No hardware found or no driver loaded"
+msgstr "Keine Hardware gefunden oder Systemtreiber nicht geladen"
+
+#: src/main.c:1113
+msgid "<b><big>Information about Tiny-CAN hardware</big></b>"
+msgstr "<b><big>Tiny-CAN Info Variablen</big></b>"
+
+#: src/main.c:1113
+msgid "Info"
+msgstr "Info"
+
+#: src/main.c:1184 src/main.c:1204 src/makro_win.c:468
+msgid "Error transmit CAN message"
+msgstr "Fehler beim versenden der CAN Nachricht"
+
+#: src/main.c:1283
+msgid "Tiny CAN Monitor"
+msgstr "Tiny CAN Monitor"
+
+#: src/main.c:1298
+msgid "_File"
+msgstr "_Datei"
+
+#: src/main.c:1317
+msgid "Edit file information"
+msgstr "Edit Datei Info"
+
+#: src/main.c:1330
+msgid "_CAN"
+msgstr "_CAN"
+
+#: src/main.c:1337
+msgid "_Trace recording start/stop"
+msgstr "_Trace Aufzeichnung start/stop"
+
+#: src/main.c:1345
+msgid "_Controller reset"
+msgstr "_Controller Reset"
+
+#: src/main.c:1353
+msgid "_Macro"
+msgstr "_Makro"
+
+#: src/main.c:1360 src/main.c:1391
+msgid "_Edit"
+msgstr "_Bearbeiten"
+
+#: src/main.c:1364 src/main.c:1395
+msgid "_Load file"
+msgstr "Datei _laden"
+
+#: src/main.c:1372 src/main.c:1403
+msgid "_Save file"
+msgstr "Datei _speichern"
+
+#: src/main.c:1380
+msgid "_Filter"
+msgstr "_Filter"
+
+#: src/main.c:1387
+msgid "_Show messages"
+msgstr "Messages anzeigen"
+
+#: src/main.c:1411 src/main.c:1463
+msgid "_Plugins"
+msgstr "_Plugins"
+
+#: src/main.c:1418
+msgid "_View"
+msgstr "_Ansicht"
+
+#: src/main.c:1425
+msgid "Show standard bar"
+msgstr "Standart Leiste"
+
+#: src/main.c:1430
+msgid "Show transmit bar"
+msgstr "Senden Leiste"
+
+#: src/main.c:1435
+msgid "Show macor bar"
+msgstr "Makro Leiste"
+
+#: src/main.c:1444
+msgid "Show button text"
+msgstr "Buttons Text anzeigen"
+
+#: src/main.c:1448
+msgid "_Options"
+msgstr "_Einstellungen"
+
+#: src/main.c:1455
+msgid "_Setup"
+msgstr "_Optionen"
+
+#: src/main.c:1472
+msgid "Established connection to Tiny-CAN"
+msgstr "Verbindung zum Tiny-CAN herstellen"
+
+#: src/main.c:1476
+msgid "Show Tiny-CAN information"
+msgstr "Tiny-CAN Info anzeigen"
+
+#: src/main.c:1480
+msgid "_Help"
+msgstr "_Hilfe"
+
+#: src/main.c:1487
+msgid "_About"
+msgstr "_Info"
+
+#: src/main.c:1505
+msgid "Load"
+msgstr "Laden"
+
+#: src/main.c:1511
+msgid "Save"
+msgstr "Speichern"
+
+#: src/main.c:1521
+msgid "Exit"
+msgstr "Beenden"
+
+#: src/main.c:1539
+msgid "CAN reset"
+msgstr "CAN Reset"
+
+#: src/main.c:1549 src/setup.c:1203
+msgid "Setup"
+msgstr "Einstellungen"
+
+#: src/main.c:1591 src/makro_win.c:886 src/setup.c:1256
+msgid "Transmit"
+msgstr "Senden"
+
+#: src/main.c:1597
+msgid "Paste"
+msgstr "Paste"
+
+#: src/main.c:1601
+msgid " Macros "
+msgstr "Makros"
+
+#: src/main.c:1619
+msgid "<b>Filter messages</b>"
+msgstr "<b>Filter Messages</b>"
+
+#: src/main_can.c:237 src/main_can.c:256
+msgid "Error loading Tiny-CAN API driver"
+msgstr "Fehler beim laden des Tiny-CAN API Treibers"
+
+#: src/makro.c:353 src/setup.c:272
+msgid "Error loading macro file"
+msgstr "Makro Datei kann nicht gefunden werden"
+
+#: src/makro.c:559
+msgid "Error saving macro description file"
+msgstr "Makro Datei kann nicht gespeichert werden"
+
+#: src/makro_win.c:246
+msgid "Show"
+msgstr "Show"
+
+#: src/makro_win.c:253
+msgid "Macro name"
+msgstr "Makro-Name"
+
+#: src/makro_win.c:491
+msgid "Error create macro"
+msgstr "Fehler beim Erstellen des Makros"
+
+#: src/makro_win.c:497
+#, c-format
+msgid "Copy from %s"
+msgstr "Kopie von %s"
+
+#: src/makro_win.c:819
+msgid "Macros ..."
+msgstr "Makros ..."
+
+#: src/makro_win.c:931
+msgid "Copy"
+msgstr "Kopieren"
+
+#: src/makro_win.c:952
+msgid "Add"
+msgstr "Hinzufügen"
+
+#: src/makro_win.c:968
+msgid "  Name : "
+msgstr "  Name : "
+
+#: src/makro_win.c:1001
+msgid "Insert"
+msgstr "Einfügen"
+
+#: src/makro_win.c:1026
+msgid "Enable"
+msgstr "Enable"
+
+#: src/makro_win.c:1030
+msgid " Time:"
+msgstr "Zeit:"
+
+#: src/makro_win.c:1042
+msgid "ms"
+msgstr "ms"
+
+#: src/makro_win.c:1046
+msgid " Interval timer "
+msgstr " Interval Timer "
+
+#: src/makro_win.c:1072
+msgid "Update interval timers"
+msgstr "Update Intervalls"
+
+#: src/plugin.c:229
+#, c-format
+msgid "module error: %s"
+msgstr "Module Fehler: %s"
+
+#: src/plugin_win.c:151
+msgid "Author:"
+msgstr "Autor:"
+
+#: src/plugin_win.c:152
+msgid "Homepage:"
+msgstr "Homepage:"
+
+#: src/plugin_win.c:255
+msgid "Plugins"
+msgstr "Plugins"
+
+#: src/plugin_win.c:256
+msgid "Setup plugin"
+msgstr "Setup plugin"
+
+#: src/plugin_win.c:276
+msgid "Enabled"
+msgstr "Enabled"
+
+#: src/plugin_win.c:282
+msgid "Name"
+msgstr "Name"
+
+#: src/plugin_win.c:289
+msgid "<b>About plugin</b>"
+msgstr "<b>Plugin Info</b>"
+
+#: src/setup.c:278
+msgid "Error loading filter file"
+msgstr "Filter Datei kann nicht gefunden werden"
+
+#: src/setup.c:379
+msgid "Error loading configuration file"
+msgstr "Setup Datei kann nicht gespeichert werden"
+
+#: src/setup.c:500
+msgid "automatic clear"
+msgstr "automatisch"
+
+#: src/setup.c:505
+msgid "asking user"
+msgstr "fragen"
+
+#: src/setup.c:510
+msgid "not clear"
+msgstr "nicht löschen"
+
+#: src/setup.c:515
+msgid "Clear data..."
+msgstr "Daten löschen..."
+
+#: src/setup.c:523
+msgid "Buffer size: "
+msgstr "Trace Puffergröße:"
+
+#: src/setup.c:533
+msgid "(minimum 10)"
+msgstr "(Minimum 10)"
+
+#: src/setup.c:619
+msgid " Font "
+msgstr "Schrift"
+
+#: src/setup.c:651
+msgid "Time-stamp"
+msgstr "Time-stamp"
+
+#: src/setup.c:657 src/setup.c:739
+msgid "Msg.-Type"
+msgstr "Msg.-Type"
+
+#: src/setup.c:663
+msgid "Id"
+msgstr "Id"
+
+#: src/setup.c:684 src/setup.c:742
+msgid "Dlc"
+msgstr "Dlc"
+
+#: src/setup.c:690
+msgid "Data 1"
+msgstr "Data 1"
+
+#: src/setup.c:696
+msgid "Data 2"
+msgstr "Data 2"
+
+#: src/setup.c:702
+msgid " Colors "
+msgstr "Farben"
+
+#: src/setup.c:720
+msgid "Time-stamp: "
+msgstr "Time-stamp: "
+
+#: src/setup.c:725
+msgid "off"
+msgstr "off"
+
+#: src/setup.c:726
+msgid "System time (absolute)"
+msgstr "System time (Absolute)"
+
+#: src/setup.c:727
+msgid "System time (relative)"
+msgstr "System time (Relative)"
+
+#: src/setup.c:728
+msgid "System time (absolute, ms)"
+msgstr "System time (Absolute, ms)"
+
+#: src/setup.c:729
+msgid "System time (relative, ms)"
+msgstr "System time (Relative, ms)"
+
+#: src/setup.c:730
+msgid "HW time stamp (absolute)"
+msgstr "HW time stamp (Absolute)"
+
+#: src/setup.c:731
+msgid "HW time stamp (relative)"
+msgstr "HW time stamp (Relative)"
+
+#: src/setup.c:736
+msgid "Tx-Msg."
+msgstr "Tx-Msg."
+
+#: src/setup.c:750
+msgid "Data 1:"
+msgstr "Data 1:"
+
+#: src/setup.c:756
+msgid "Data 2:"
+msgstr "Data 2:"
+
+#: src/setup.c:766 src/setup.c:775
+msgid "Hide"
+msgstr "Off"
+
+#: src/setup.c:767 src/setup.c:776
+msgid "Hex"
+msgstr "Hex"
+
+#: src/setup.c:768 src/setup.c:777
+msgid "Decimal"
+msgstr "Dezimal"
+
+#: src/setup.c:769 src/setup.c:778
+msgid "ASCII"
+msgstr "ASCII"
+
+#: src/setup.c:780
+msgid " Columns "
+msgstr "Spalten"
+
+#: src/setup.c:887
+msgid "Reading filter messages interval"
+msgstr "Filter Messages abfragen alle..."
+
+#: src/setup.c:898
+msgid "100 ms"
+msgstr "100 ms"
+
+#: src/setup.c:903
+msgid "250 ms"
+msgstr "250 ms"
+
+#: src/setup.c:908
+msgid "500 ms"
+msgstr "500 ms"
+
+#: src/setup.c:913
+msgid "1 s"
+msgstr "1 s"
+
+#: src/setup.c:982
+msgid "Numer of transmissen bars in the window"
+msgstr "Zeilenanzahl im Sende-Fenster:"
+
+#: src/setup.c:991
+msgid "Transmit message if press \"RETURN\" key"
+msgstr "Senden der CAN-Message wenn \"RETURN\" gedrückt"
+
+#: src/setup.c:1051
+msgid "Connect to Tiny-CAN automatically"
+msgstr "Verbindung zum Tiny-CAN automatisch herstellen"
+
+#: src/setup.c:1065
+msgid "Tiny-CAN serial number"
+msgstr "Tiny-CAN Seriennummer:"
+
+#: src/setup.c:1073
+msgid "Use serial number"
+msgstr "Seriennummer verwenden"
+
+#: src/setup.c:1093
+msgid "Port setup"
+msgstr "Schnittstelle Setup ..."
+
+#: src/setup.c:1100
+msgid "Driver Options:"
+msgstr "Treiber Optionen:"
+
+#: src/setup.c:1228
+msgid "CAN"
+msgstr "CAN"
+
+#: src/setup.c:1235
+msgid "Data window"
+msgstr "Daten Liste"
+
+#: src/setup.c:1242
+msgid "Monitor"
+msgstr "Ansicht"
+
+#: src/setup.c:1249
+msgid "Filter"
+msgstr "Filter"
+
+#: src/setup.c:1263
+msgid "Hardware"
+msgstr "Hardware"
+
+#: src/setup.c:1271
+msgid "Driver"
+msgstr "Treiber"
+
+#: src/drv_win.c:44
+#, c-format
+msgid "No Tiny-CAN API drivers found in dirctory \"%s\""
+msgstr "Im Verzeichnis \"%s\" wurden keine Tiny-CAN API Treiber gefunden"
+
+#: src/drv_win.c:163
+msgid "Change Tiny-CAN API directory"
+msgstr "Tiny-CAN API Verzeichnis auswählen"
+
+#: src/drv_win.c:245
+msgid "Selecting a driver:"
+msgstr "Treiber auswählen"
+
+#: src/drv_win.c:252
+msgid "<b>About driver</b>"
+msgstr "<b>Treiber Info</b>"
+
+#: src/start_win.c:28
+msgid ""
+"Tiny CAN-Monitor has been run at the first time on your computer.\n"
+"This wizard helps you with the correct configuration.\n"
+"\n"
+"For communication with the hardware you must load a driver,\n"
+"Tiny-CAN Monitor is looking at the following directory for drivers:"
+msgstr ""
+"Tiny CAN-Monitor wurde zum ersten mal auf Ihrem Computer gestertet. Dieser "
+"Assistent hilft Ihnen bei der richtigen Konfiguration\n"
+"\n"
+"Zur Kommunikation mit der Hardware muss ein passender Treiber ausgewählt "
+"werden\n"
+"\n"
+"Das Programm Tiny-CAN Monitor laedt die Treiber aus folgenden Verzeichnis:"
+
+#: src/start_win.c:36
+msgid ""
+"You have selected a driver successful, the configuration wizard is closing "
+"now.\n"
+"\n"
+"You can change the settings at Options Setup Driver\n"
+msgstr ""
+"Es wurde erfolgreich ein Treiber ausgewählt\n"
+"\n"
+"Die Einstellungen können jederzeit im Menue \"Einstellungen -> Treiber\" "
+"geändert werden\n"
+
+#: src/start_win.c:57
+msgid "No found Tiny-CAN API drivers at the selected directory."
+msgstr ""
+"In den angegebenen Verzeichnis konnten keine Tiny-CAN API Treiber gefunden "
+"werden"
+
+#: src/start_win.c:69
+msgid "<span foreground=\"red\">No directory selected!</span>"
+msgstr "<span foreground=\"red\">Kein Verzeichnis ausgewählt!</span>"
+
+#: src/start_win.c:81
+#, c-format
+msgid "%s selected"
+msgstr "%s ausgewählt"
+
+#: src/start_win.c:88
+msgid "<span foreground=\"red\">No driver selected!</span>"
+msgstr "<span foreground=\"red\">Kein Treiber ausgewählt!</span>"
+
+#: src/start_win.c:99
+msgid "Change directory"
+msgstr "Verzeichnis ändern"
+
+#: src/start_win.c:140
+#, c-format
+msgid "Tiny-CAN Start (page %d of %d)"
+msgstr "Tiny-CAN Start (%d von %d)"
+
+#: src/start_win.c:161
+msgid "Change"
+msgstr "Ändern"
+
+#: src/start_win.c:171
+msgid "Welcome"
+msgstr "Willkommen"
+
+#: src/start_win.c:203
+msgid "Selecting a driver"
+msgstr "Treiber auswählen"
+
+#: src/start_win.c:223
+msgid "Finish"
+msgstr "Ende"
+
+#: src/can_speed_win.c:187
+msgid "CAN transfer rate"
+msgstr "Übertragungsgeschwindigkeit"
+
+#: src/can_speed_win.c:199
+msgid "User CAN speeds"
+msgstr "Benutzerdefinierte Übertragungsgeschwindigkeiten"
+
+#: src/can_speed_win.c:220
+msgid "CAN operating mode"
+msgstr "CAN Controller Betriebsmodus"
+
+#: src/can_speed_win.c:231
+msgid "Normal"
+msgstr "Normal"
+
+#: src/can_speed_win.c:236
+msgid "Automatic Retransmission disable"
+msgstr "Automatic Retransmission disable"
+
+#: src/can_speed_win.c:241
+msgid "Silent Mode (LOM = Listen only Mode)"
+msgstr "Silent Mode (LOM = Listen only Mode)"
+
+#: src/const.h:7
+msgid "Programm wird gestartet"
+msgstr "Programm wird gestartet"
+
+#: src/const.h:8
+msgid "Setup, Makros und Filter laden"
+msgstr "Setup, Makros und Filter laden"
+
+#: src/const.h:9
+msgid "Plugins laden"
+msgstr "Plugins laden"
+
+#~ msgid "10 kBit/s"
+#~ msgstr "10 kBit/s"
+
+#~ msgid "20 kBit/s"
+#~ msgstr "20 kBit/s"
+
+#~ msgid "50 kBit/s"
+#~ msgstr "50 kBit/s"
+
+#~ msgid "100 kBit/s  "
+#~ msgstr "100 kBit/s  "
+
+#~ msgid "125 kBit/s"
+#~ msgstr "125 kBit/s"
+
+#~ msgid "250 kBit/s"
+#~ msgstr "250 kBit/s"
+
+#~ msgid "500 kBit/s"
+#~ msgstr "500 kBit/s"
+
+#~ msgid "800 kBit/s"
+#~ msgstr "800 kBit/s"
+
+#~ msgid "1 MBit/s"
+#~ msgstr "1 MBit/s"

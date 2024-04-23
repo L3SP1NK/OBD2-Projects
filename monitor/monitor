@@ -1,0 +1,37 @@
+#!/bin/bash
+#set -euxo pipefail
+
+all_value="$(./get_value)"
+
+#params=( $( echo "${all_value}" | cut -d ':' -f 1 ) )
+params=( 'RPM' 'THROTTLE' 'CONTROL' 'INTAKE' 'SPEED' 'MAF' 'EGR' 'VOLTAGE' 'BARO' 'CATALYST' )
+
+
+getVal(){
+
+	for param in "${params[@]}"; do
+
+		echo "${all_value}"|grep "${param}"|grep -v ':$'
+
+	done
+
+}
+
+displaySensors(){
+	value=( "$(getVal | grep degree | sed 's# degree_Celsius#°C#g')" )
+	for value in "${value[@]}";do
+		echo ${value}|sed 's# #\t#g;s#:\t#: #g'
+	done
+}
+
+displayEngine
+
+displayEngine(){
+	value=( "$(getVal | grep -E 'PRESSURE|EGR|RPM|CONTROL' | sed 's#\t revolutions_per_minute##g;s#\tvolt#V#g;s#\tkilopascal#kpa#g')" )
+	for value in "${value[@]}";do
+		echo ${value}|sed 's# #\t#g;s#:\t#: #g'
+	done
+}
+
+displaySensors
+displayEngine

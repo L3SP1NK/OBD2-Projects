@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="demo" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="windows\demo" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj\Debug\" />
+				<Option type="3" />
+				<Option compiler="gcc" />
+				<Option createDefFile="1" />
+				<Option createStaticLib="1" />
+				<Compiler>
+					<Add option="-Wall" />
+					<Add option="-DBUILD_DLL" />
+					<Add option="-g" />
+				</Compiler>
+				<Linker>
+					<Add library="user32" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="windows\demo" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj\Release\" />
+				<Option type="3" />
+				<Option compiler="gcc" />
+				<Option createDefFile="1" />
+				<Option createStaticLib="1" />
+				<Compiler>
+					<Add option="-Wall" />
+					<Add option="-DBUILD_DLL" />
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add library="user32" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-mms-bitfields" />
+			<Add directory="$(#gtk.include)" />
+			<Add directory="$(#gtk.include)\gtk-2.0" />
+			<Add directory="$(#gtk.include)\cairo" />
+			<Add directory="$(#gtk.include)\gdk" />
+			<Add directory="$(#gtk.include)\glib-2.0" />
+			<Add directory="$(#gtk.lib)\glib-2.0\include" />
+			<Add directory="$(#gtk.include)\pango-1.0" />
+			<Add directory="$(#gtk.lib)\gtk-2.0\include" />
+			<Add directory="$(#gtk.include)\atk-1.0" />
+			<Add directory="$(#can_api.include)" />
+			<Add directory="$(#libcanmonitor.include)" />
+			<Add directory="$(#giw.include)" />
+			<Add directory="..\..\plugins" />
+			<Add directory="..\..\src" />
+		</Compiler>
+		<Linker>
+			<Add library="gtk-win32-2.0" />
+			<Add library="gobject-2.0" />
+			<Add library="glib-2.0" />
+			<Add library="gdk-win32-2.0" />
+			<Add library="atk-1.0" />
+			<Add library="gdk_pixbuf-2.0" />
+			<Add library="pangowin32-1.0" />
+			<Add library="pango-1.0" />
+			<Add library="canmonitor" />
+			<Add library="giw" />
+			<Add directory="$(#gtk.lib)" />
+			<Add directory="$(#libcanmonitor.lib)" />
+			<Add directory="$(#giw.lib)" />
+		</Linker>
+		<Unit filename="demo.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Extensions>
+			<code_completion />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
